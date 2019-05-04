@@ -4,8 +4,7 @@ A lightning talk presented at DevNQ: turns out that the water safety and
 drowning prevention program _Kids Alive: Do the Five_ has actually be teaching
 IT security all these years.
 
-* View Online: <https://davidjb.github.io/2019-devnq-devs-alive/>
-* Slides PDF: <https://github.com/davidjb/2019-devnq-devs-alive/raw/master/slides-web.pdf>
+Slides PDF: <https://github.com/davidjb/2019-devnq-devs-alive/raw/master/slides-web.pdf>
 
 ## Setup
 
