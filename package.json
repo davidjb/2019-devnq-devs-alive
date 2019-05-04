@@ -1,0 +1,17 @@
+{
+  "name": "2019-devs-alive-talk",
+  "version": "1.0.0",
+  "main": "index.html",
+  "author": "davidjb",
+  "license": "AGPL-3.0-only",
+  "scripts": {
+    "start": "live-server",
+    "pdf": "decktape reveal index.html slides.pdf --size 1920x1400 --chrome-arg=--allow-file-access-from-files",
+    "optimise-pdf": "gs -o slides-web.pdf -sDEVICE=pdfwrite -dDownsampleColorImages=true -dDownsampleGrayImages=true -dDownsampleMonoImages=true -dColorImageResolution=72 -dGrayImageResolution=72 -dMonoImageResolution=72 -dColorImageDownsampleThreshold=1.0 -dGrayImageDownsampleThreshold=1.0 -dMonoImageDownsampleThreshold=1.0 slides.pdf"
+  },
+  "dependencies": {
+    "decktape": "^2.9.2",
+    "live-server": "^1.2.1",
+    "reveal.js": "^3.8.0"
+  }
+}

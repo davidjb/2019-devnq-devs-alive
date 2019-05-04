@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Devs Alive: Do the Five</title>
+
+    <link rel="stylesheet" href="node_modules/reveal.js/css/reset.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/css/theme/serif.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="node_modules/reveal.js/lib/css/monokai.css">
+
+    <!-- Custom styles -->
+    <style>
+      .reveal p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .reveal .full {
+        height: 100%;
+        widht: 100%;
+      }
+      .reveal .attribution {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: .4em !important;
+      }
+      .reveal .middle {
+        vertical-align: middle;
+      }
+      .reveal .wrap {
+        white-space: pre-wrap;
+      }
+      .reveal .slides .dark {
+        background-color: #000;
+        color: #fff;
+      }
+      .reveal .slides .logo {
+        height: 100%;
+        min-height: 15vh;
+        max-height: 25vh;
+      }
+      .reveal section img {
+        background: transparent;
+      }
+      .reveal a {
+        color: #0088f4;
+      }
+    </style>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'node_modules/reveal.js/css/print/pdf.css' : 'node_modules/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="slides.md"
+          data-background="#fff"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:">
+        </section>
+      </div>
+    </div>
+
+    <script src="node_modules/reveal.js/js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        hash: true, // No browser history
+        preloadIframes: true,
+        previewLinks: true,
+        margin: 0.1,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'node_modules/reveal.js/plugin/markdown/marked.js' },
+          { src: 'node_modules/reveal.js/plugin/markdown/markdown.js' },
+          { src: 'node_modules/reveal.js/plugin/notes/notes.js', async: true },
+          { src: 'node_modules/reveal.js/plugin/highlight/highlight.js', async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>
